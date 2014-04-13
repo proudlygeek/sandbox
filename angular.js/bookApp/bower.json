@@ -1,0 +1,21 @@
+{
+  "name": "bookApp",
+  "version": "0.0.1",
+  "authors": [
+    "Gianluca Bargelli <g.bargelli@gmail.com>"
+  ],
+  "description": "Book archive app",
+  "main": "app.js",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.0.8"
+  }
+}

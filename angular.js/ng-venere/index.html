@@ -1,0 +1,94 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>ng-venere</title>
+  <link rel="stylesheet" href="bower_components/foundation/css/normalize.css" type="text/css" media="screen" charset="utf-8">
+  <link rel="stylesheet" href="bower_components/foundation/css/foundation.min.css" type="text/css" media="screen" charset="utf-8">
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+</head>
+<body>
+  <style>
+  body {
+    font-family: "Open Sans";
+  }
+  .content {
+    position: relative;
+    height: 100%;
+    padding-top: 5em;
+  }
+  input[type="text"] {
+    margin-bottom: 0; 
+    margin-top: 7px;
+    border-radius: 5px;
+  }
+
+  h1 {
+    text-align: center;
+    color: #fff;
+    font-weight: 700;
+  }
+
+  button {
+    margin-bottom: 0;
+    border-radius: 5px;
+  }
+
+  img {
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+  }
+
+  .large-4, .large-3, .large-2 {
+    padding-top: 21px;
+    padding-bottom: 21px;
+  }
+
+  #search-form {
+    margin: 0 auto;
+    margin-top: 4em;
+    background-color: white;
+    border: 1px solid #777;
+    border-radius: 5px;
+  }
+
+  .results ul {
+    list-style: none;
+  }
+  </style>
+  <div class="content" ng-app="venere">
+    <div ng-controller="MainCtrl">
+      <h1> Welcome to your holidays. </h1>
+      <div id="search-form" class="row">
+        <div class="large-4 columns">
+          <input placeholder="Where do you wanna go?" type="text" ng-model="search_query">
+        </div>
+        <div class="large-3 columns">
+          <input placeholder="Check-in" type="text" ng-model="date.checkin">
+        </div>
+        <div class="large-3 columns">
+          <input placeholder="Check-out" type="text" ng-model="date.checkout">
+        </div>
+        <div class="large-2 columns">
+          <button>search</button>
+        </div>
+      </div>
+      <div ng-show="notEmpty()" class="results panel callout radius row">
+        <ul>
+          <li ng-repeat="property in properties">
+          {{ property.name }} ({{ property.pcount }})
+          </li>
+        </ul>
+      </div>
+      <img src="http://ppcdn.500px.org/52052382/617b76109959cd14252fb11448cfe0fd780b139d/2048.jpg" />
+    </div>
+  </div>
+  <script type="text/javascript" charset="utf-8" src="bower_components/angular/angular.min.js"></script>
+  <script type="text/javascript" charset="utf-8" src="app/app.js"></script>
+  <script type="text/javascript" charset="utf-8" src="app/services/autocomplete.js"></script>
+  <script type="text/javascript" charset="utf-8" src="app/controllers/main.js"></script>
+</body>
+</html>

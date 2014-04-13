@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="lib/angular-1.0.7/angular.min.js"></script>
+		<script src="app.js"></script>
+		<link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/foundation/4.2.2/css/foundation.min.css">
+	</head>
+	<body>
+    	<div ng-app="twitterApp">
+            <div ng-controller="AppCtrl">
+                <div enter="loadMoreTweets()">Roll over to load more divs...</div>
+                <button enter="deleteTweets()">Delete Tweets</button>
+            </div>   
+        </div>
+	</body>
+</html>

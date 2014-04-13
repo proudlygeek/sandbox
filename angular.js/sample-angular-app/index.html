@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+	<head>
+		<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+		<script src="app.js"></script>
+		<link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/foundation/4.2.2/css/foundation.min.css">
+	</head>
+	<body>
+		<div ng-controller="FirstCtrl">
+			Hello {{ data.message }}!
+			<input type="text" ng-model="data.message">
+		</div>
+
+		<div ng-controller="SecondCtrl">
+			Hi again {{ data.message|reverse }}
+			<input type="text" ng-model="data.message">
+		</div>
+	</body>
+</html>

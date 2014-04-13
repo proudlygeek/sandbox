@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="ivy-report.xsl"?>
+<ivy-report version="1.0">
+	<info
+		organisation="quickstart"
+		module="quickstart_2.10"
+		revision="1.0"
+		conf="compile-internal"
+		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
+		date="20140311230032"/>
+	<dependencies>
+		<module organisation="com.twitter" name="finagle-http_2.10">
+			<revision name="6.2.0" status="release" pubdate="20130213205313" resolver="public" artresolver="public" homepage="https://github.com/twitter/util" downloaded="true" searched="true" default="false" conf="default(compile), default, compile, runtime, master" position="1">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="successful" details="" size="3187" time="558" location="/Users/Bargelli/.ivy2/cache/com.twitter/finagle-http_2.10/ivy-6.2.0.xml" searched="true" original-local-location="/Users/Bargelli/.ivy2/cache/com.twitter/finagle-http_2.10/ivy-6.2.0.xml.original" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/com/twitter/finagle-http_2.10/6.2.0/finagle-http_2.10-6.2.0.pom"/>
+				<caller organisation="quickstart" name="quickstart_2.10" conf="optional, compile, provided, compile-internal" rev="6.2.0" rev-constraint-default="6.2.0" rev-constraint-dynamic="6.2.0" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="finagle-http_2.10" type="jar" ext="jar" status="no" details="" size="424892" time="0" location="/Users/Bargelli/.ivy2/cache/com.twitter/finagle-http_2.10/jars/finagle-http_2.10-6.2.0.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/com/twitter/finagle-http_2.10/6.2.0/finagle-http_2.10-6.2.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="commons-lang" name="commons-lang">
+			<revision name="2.6" status="release" pubdate="20110116232147" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://commons.apache.org/lang/" downloaded="false" searched="false" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="15">
+				<metadata-artifact status="no" details="" size="6390" time="0" location="/Users/Bargelli/.ivy2/cache/commons-lang/commons-lang/ivy-2.6.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/commons-lang/commons-lang/2.6/commons-lang-2.6.pom"/>
+				<caller organisation="com.twitter" name="finagle-http_2.10" conf="default, compile, runtime, master" rev="2.6" rev-constraint-default="2.6" rev-constraint-dynamic="2.6" callerrev="6.2.0"/>
+				<artifacts>
+					<artifact name="commons-lang" type="jar" ext="jar" status="no" details="" size="284220" time="0" location="/Users/Bargelli/.ivy2/cache/commons-lang/commons-lang/jars/commons-lang-2.6.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/commons-lang/commons-lang/2.6/commons-lang-2.6.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.twitter" name="util-codec_2.10">
+			<revision name="6.2.0" status="release" pubdate="20130213050127" resolver="public" artresolver="public" homepage="https://github.com/twitter/util" downloaded="true" searched="true" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="13">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="successful" details="" size="3364" time="378" location="/Users/Bargelli/.ivy2/cache/com.twitter/util-codec_2.10/ivy-6.2.0.xml" searched="true" original-local-location="/Users/Bargelli/.ivy2/cache/com.twitter/util-codec_2.10/ivy-6.2.0.xml.original" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/com/twitter/util-codec_2.10/6.2.0/util-codec_2.10-6.2.0.pom"/>
+				<caller organisation="com.twitter" name="finagle-http_2.10" conf="default, compile, runtime, master" rev="6.2.0" rev-constraint-default="6.2.0" rev-constraint-dynamic="6.2.0" callerrev="6.2.0"/>
+				<artifacts>
+					<artifact name="util-codec_2.10" type="jar" ext="jar" status="no" details="" size="7344" time="0" location="/Users/Bargelli/.ivy2/cache/com.twitter/util-codec_2.10/jars/util-codec_2.10-6.2.0.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/com/twitter/util-codec_2.10/6.2.0/util-codec_2.10-6.2.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.twitter" name="finagle-core_2.10">
+			<revision name="6.2.0" status="release" pubdate="20130213205411" resolver="public" artresolver="public" homepage="https://github.com/twitter/util" downloaded="true" searched="true" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="2">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="successful" details="" size="3748" time="429" location="/Users/Bargelli/.ivy2/cache/com.twitter/finagle-core_2.10/ivy-6.2.0.xml" searched="true" original-local-location="/Users/Bargelli/.ivy2/cache/com.twitter/finagle-core_2.10/ivy-6.2.0.xml.original" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/com/twitter/finagle-core_2.10/6.2.0/finagle-core_2.10-6.2.0.pom"/>
+				<caller organisation="com.twitter" name="finagle-http_2.10" conf="default, compile, runtime, master" rev="6.2.0" rev-constraint-default="6.2.0" rev-constraint-dynamic="6.2.0" callerrev="6.2.0"/>
+				<artifacts>
+					<artifact name="finagle-core_2.10" type="jar" ext="jar" status="no" details="" size="1506858" time="0" location="/Users/Bargelli/.ivy2/cache/com.twitter/finagle-core_2.10/jars/finagle-core_2.10-6.2.0.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/com/twitter/finagle-core_2.10/6.2.0/finagle-core_2.10-6.2.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.twitter" name="util-jvm_2.10">
+			<revision name="6.2.0" status="release" pubdate="20130213050216" resolver="public" artresolver="public" homepage="https://github.com/twitter/util" downloaded="true" searched="true" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="10">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="successful" details="" size="3394" time="592" location="/Users/Bargelli/.ivy2/cache/com.twitter/util-jvm_2.10/ivy-6.2.0.xml" searched="true" original-local-location="/Users/Bargelli/.ivy2/cache/com.twitter/util-jvm_2.10/ivy-6.2.0.xml.original" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/com/twitter/util-jvm_2.10/6.2.0/util-jvm_2.10-6.2.0.pom"/>
+				<caller organisation="com.twitter" name="finagle-core_2.10" conf="compile, runtime" rev="6.2.0" rev-constraint-default="6.2.0" rev-constraint-dynamic="6.2.0" callerrev="6.2.0"/>
+				<artifacts>
+					<artifact name="util-jvm_2.10" type="jar" ext="jar" status="no" details="" size="166091" time="0" location="/Users/Bargelli/.ivy2/cache/com.twitter/util-jvm_2.10/jars/util-jvm_2.10-6.2.0.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/com/twitter/util-jvm_2.10/6.2.0/util-jvm_2.10-6.2.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.twitter" name="util-logging_2.10">
+			<revision name="6.2.0" status="release" pubdate="20130213050319" resolver="public" artresolver="public" homepage="https://github.com/twitter/util" downloaded="true" searched="true" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="11">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="successful" details="" size="3589" time="653" location="/Users/Bargelli/.ivy2/cache/com.twitter/util-logging_2.10/ivy-6.2.0.xml" searched="true" original-local-location="/Users/Bargelli/.ivy2/cache/com.twitter/util-logging_2.10/ivy-6.2.0.xml.original" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/com/twitter/util-logging_2.10/6.2.0/util-logging_2.10-6.2.0.pom"/>
+				<caller organisation="com.twitter" name="finagle-http_2.10" conf="default, compile, runtime, master" rev="6.2.0" rev-constraint-default="6.2.0" rev-constraint-dynamic="6.2.0" callerrev="6.2.0"/>
+				<caller organisation="com.twitter" name="finagle-core_2.10" conf="compile, runtime" rev="6.2.0" rev-constraint-default="6.2.0" rev-constraint-dynamic="6.2.0" callerrev="6.2.0"/>
+				<artifacts>
+					<artifact name="util-logging_2.10" type="jar" ext="jar" status="no" details="" size="203449" time="0" location="/Users/Bargelli/.ivy2/cache/com.twitter/util-logging_2.10/jars/util-logging_2.10-6.2.0.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/com/twitter/util-logging_2.10/6.2.0/util-logging_2.10-6.2.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.twitter" name="util-app_2.10">
+			<revision name="6.2.0" status="release" pubdate="20130213050208" resolver="public" artresolver="public" homepage="https://github.com/twitter/util" downloaded="true" searched="true" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="12">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="successful" details="" size="3184" time="533" location="/Users/Bargelli/.ivy2/cache/com.twitter/util-app_2.10/ivy-6.2.0.xml" searched="true" original-local-location="/Users/Bargelli/.ivy2/cache/com.twitter/util-app_2.10/ivy-6.2.0.xml.original" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/com/twitter/util-app_2.10/6.2.0/util-app_2.10-6.2.0.pom"/>
+				<caller organisation="com.twitter" name="util-logging_2.10" conf="compile, runtime" rev="6.2.0" rev-constraint-default="6.2.0" rev-constraint-dynamic="6.2.0" callerrev="6.2.0"/>
+				<artifacts>
+					<artifact name="util-app_2.10" type="jar" ext="jar" status="no" details="" size="47041" time="0" location="/Users/Bargelli/.ivy2/cache/com.twitter/util-app_2.10/jars/util-app_2.10-6.2.0.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/com/twitter/util-app_2.10/6.2.0/util-app_2.10-6.2.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.twitter" name="util-hashing_2.10">
+			<revision name="6.2.0" status="release" pubdate="20130213050155" resolver="public" artresolver="public" homepage="https://github.com/twitter/util" downloaded="true" searched="true" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="9">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="successful" details="" size="3402" time="904" location="/Users/Bargelli/.ivy2/cache/com.twitter/util-hashing_2.10/ivy-6.2.0.xml" searched="true" original-local-location="/Users/Bargelli/.ivy2/cache/com.twitter/util-hashing_2.10/ivy-6.2.0.xml.original" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/com/twitter/util-hashing_2.10/6.2.0/util-hashing_2.10-6.2.0.pom"/>
+				<caller organisation="com.twitter" name="finagle-core_2.10" conf="compile, runtime" rev="6.2.0" rev-constraint-default="6.2.0" rev-constraint-dynamic="6.2.0" callerrev="6.2.0"/>
+				<artifacts>
+					<artifact name="util-hashing_2.10" type="jar" ext="jar" status="no" details="" size="65896" time="0" location="/Users/Bargelli/.ivy2/cache/com.twitter/util-hashing_2.10/jars/util-hashing_2.10-6.2.0.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/com/twitter/util-hashing_2.10/6.2.0/util-hashing_2.10-6.2.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="commons-codec" name="commons-codec">
+			<revision name="1.5" status="release" pubdate="20110325023406" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://commons.apache.org/codec/" downloaded="false" searched="false" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="14">
+				<metadata-artifact status="no" details="" size="6299" time="0" location="/Users/Bargelli/.ivy2/cache/commons-codec/commons-codec/ivy-1.5.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/commons-codec/commons-codec/1.5/commons-codec-1.5.pom"/>
+				<caller organisation="com.twitter" name="util-codec_2.10" conf="compile, runtime" rev="1.5" rev-constraint-default="1.5" rev-constraint-dynamic="1.5" callerrev="6.2.0"/>
+				<artifacts>
+					<artifact name="commons-codec" type="jar" ext="jar" status="no" details="" size="73098" time="0" location="/Users/Bargelli/.ivy2/cache/commons-codec/commons-codec/jars/commons-codec-1.5.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/commons-codec/commons-codec/1.5/commons-codec-1.5.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.twitter" name="util-collection_2.10">
+			<revision name="6.2.0" status="release" pubdate="20130213050206" resolver="public" artresolver="public" homepage="https://github.com/twitter/util" downloaded="true" searched="true" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="5">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="successful" details="" size="3565" time="439" location="/Users/Bargelli/.ivy2/cache/com.twitter/util-collection_2.10/ivy-6.2.0.xml" searched="true" original-local-location="/Users/Bargelli/.ivy2/cache/com.twitter/util-collection_2.10/ivy-6.2.0.xml.original" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/com/twitter/util-collection_2.10/6.2.0/util-collection_2.10-6.2.0.pom"/>
+				<caller organisation="com.twitter" name="finagle-core_2.10" conf="compile, runtime" rev="6.2.0" rev-constraint-default="6.2.0" rev-constraint-dynamic="6.2.0" callerrev="6.2.0"/>
+				<artifacts>
+					<artifact name="util-collection_2.10" type="jar" ext="jar" status="no" details="" size="49692" time="0" location="/Users/Bargelli/.ivy2/cache/com.twitter/util-collection_2.10/jars/util-collection_2.10-6.2.0.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/com/twitter/util-collection_2.10/6.2.0/util-collection_2.10-6.2.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="commons-collections" name="commons-collections">
+			<revision name="3.2.1" status="release" pubdate="20080415030924" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://commons.apache.org/collections/" downloaded="false" searched="false" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="8">
+				<metadata-artifact status="no" details="" size="4584" time="0" location="/Users/Bargelli/.ivy2/cache/commons-collections/commons-collections/ivy-3.2.1.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/commons-collections/commons-collections/3.2.1/commons-collections-3.2.1.pom"/>
+				<caller organisation="com.twitter" name="util-collection_2.10" conf="compile, runtime" rev="3.2.1" rev-constraint-default="3.2.1" rev-constraint-dynamic="3.2.1" callerrev="6.2.0"/>
+				<artifacts>
+					<artifact name="commons-collections" type="jar" ext="jar" status="no" details="" size="575389" time="0" location="/Users/Bargelli/.ivy2/cache/commons-collections/commons-collections/jars/commons-collections-3.2.1.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/commons-collections/commons-collections/3.2.1/commons-collections-3.2.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.google.guava" name="guava">
+			<revision name="11.0.2" status="release" pubdate="20120222150217" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="6">
+				<metadata-artifact status="no" details="" size="3835" time="0" location="/Users/Bargelli/.ivy2/cache/com.google.guava/guava/ivy-11.0.2.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/com/google/guava/guava/11.0.2/guava-11.0.2.pom"/>
+				<caller organisation="com.twitter" name="util-collection_2.10" conf="compile, runtime" rev="11.0.2" rev-constraint-default="11.0.2" rev-constraint-dynamic="11.0.2" callerrev="6.2.0"/>
+				<artifacts>
+					<artifact name="guava" type="jar" ext="jar" status="no" details="" size="1648200" time="0" location="/Users/Bargelli/.ivy2/cache/com.google.guava/guava/jars/guava-11.0.2.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/com/google/guava/guava/11.0.2/guava-11.0.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.google.code.findbugs" name="jsr305">
+			<revision name="1.3.9" status="release" pubdate="20090825002822" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://findbugs.sourceforge.net/" downloaded="false" searched="false" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="7">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="2393" time="0" location="/Users/Bargelli/.ivy2/cache/com.google.code.findbugs/jsr305/ivy-1.3.9.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.pom"/>
+				<caller organisation="com.google.guava" name="guava" conf="compile, runtime" rev="1.3.9" rev-constraint-default="1.3.9" rev-constraint-dynamic="1.3.9" callerrev="11.0.2"/>
+				<artifacts>
+					<artifact name="jsr305" type="jar" ext="jar" status="no" details="" size="33015" time="0" location="/Users/Bargelli/.ivy2/cache/com.google.code.findbugs/jsr305/jars/jsr305-1.3.9.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.twitter" name="util-core_2.10">
+			<revision name="6.2.0" status="release" pubdate="20130213050138" resolver="public" artresolver="public" homepage="https://github.com/twitter/util" downloaded="true" searched="true" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="4">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="successful" details="" size="3222" time="434" location="/Users/Bargelli/.ivy2/cache/com.twitter/util-core_2.10/ivy-6.2.0.xml" searched="true" original-local-location="/Users/Bargelli/.ivy2/cache/com.twitter/util-core_2.10/ivy-6.2.0.xml.original" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/com/twitter/util-core_2.10/6.2.0/util-core_2.10-6.2.0.pom"/>
+				<caller organisation="com.twitter" name="util-logging_2.10" conf="compile, runtime" rev="6.2.0" rev-constraint-default="6.2.0" rev-constraint-dynamic="6.2.0" callerrev="6.2.0"/>
+				<caller organisation="com.twitter" name="util-codec_2.10" conf="compile, runtime" rev="6.2.0" rev-constraint-default="6.2.0" rev-constraint-dynamic="6.2.0" callerrev="6.2.0"/>
+				<caller organisation="com.twitter" name="util-collection_2.10" conf="compile, runtime" rev="6.2.0" rev-constraint-default="6.2.0" rev-constraint-dynamic="6.2.0" callerrev="6.2.0"/>
+				<caller organisation="com.twitter" name="util-jvm_2.10" conf="compile, runtime" rev="6.2.0" rev-constraint-default="6.2.0" rev-constraint-dynamic="6.2.0" callerrev="6.2.0"/>
+				<caller organisation="com.twitter" name="util-hashing_2.10" conf="compile, runtime" rev="6.2.0" rev-constraint-default="6.2.0" rev-constraint-dynamic="6.2.0" callerrev="6.2.0"/>
+				<caller organisation="com.twitter" name="util-app_2.10" conf="compile, runtime" rev="6.2.0" rev-constraint-default="6.2.0" rev-constraint-dynamic="6.2.0" callerrev="6.2.0"/>
+				<caller organisation="com.twitter" name="finagle-core_2.10" conf="compile, runtime" rev="6.2.0" rev-constraint-default="6.2.0" rev-constraint-dynamic="6.2.0" callerrev="6.2.0"/>
+				<artifacts>
+					<artifact name="util-core_2.10" type="jar" ext="jar" status="no" details="" size="746208" time="0" location="/Users/Bargelli/.ivy2/cache/com.twitter/util-core_2.10/jars/util-core_2.10-6.2.0.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/com/twitter/util-core_2.10/6.2.0/util-core_2.10-6.2.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="io.netty" name="netty">
+			<revision name="3.5.5.Final" status="release" pubdate="20120822143838" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://netty.io/" downloaded="false" searched="false" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="3">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="6423" time="0" location="/Users/Bargelli/.ivy2/cache/io.netty/netty/ivy-3.5.5.Final.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/io/netty/netty/3.5.5.Final/netty-3.5.5.Final.pom"/>
+				<caller organisation="com.twitter" name="finagle-core_2.10" conf="compile, runtime" rev="3.5.5.Final" rev-constraint-default="3.5.5.Final" rev-constraint-dynamic="3.5.5.Final" callerrev="6.2.0"/>
+				<artifacts>
+					<artifact name="netty" type="bundle" ext="jar" status="no" details="" size="1126301" time="0" location="/Users/Bargelli/.ivy2/cache/io.netty/netty/bundles/netty-3.5.5.Final.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/io/netty/netty/3.5.5.Final/netty-3.5.5.Final.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang" name="scala-library">
+			<revision name="2.10.3" status="release" pubdate="20130927114454" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" extra-info.apiURL="http://www.scala-lang.org/api/2.10.3/" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master, master(*), compile(*), runtime(*)" position="0">
+				<license name="BSD-like" url="http://www.scala-lang.org/downloads/license.html          "/>
+				<metadata-artifact status="no" details="" size="2487" time="0" location="/Users/Bargelli/.ivy2/cache/org.scala-lang/scala-library/ivy-2.10.3.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/scala-lang/scala-library/2.10.3/scala-library-2.10.3.pom"/>
+				<caller organisation="com.twitter" name="util-logging_2.10" conf="compile, runtime" rev="2.10.0" rev-constraint-default="2.10.0" rev-constraint-dynamic="2.10.0" callerrev="6.2.0"/>
+				<caller organisation="com.twitter" name="finagle-http_2.10" conf="default, compile, runtime, master" rev="2.10.0" rev-constraint-default="2.10.0" rev-constraint-dynamic="2.10.0" callerrev="6.2.0"/>
+				<caller organisation="quickstart" name="quickstart_2.10" conf="optional, compile, provided, compile-internal" rev="2.10.3" rev-constraint-default="2.10.3" rev-constraint-dynamic="2.10.3" callerrev="1.0"/>
+				<caller organisation="com.twitter" name="util-codec_2.10" conf="compile, runtime" rev="2.10.0" rev-constraint-default="2.10.0" rev-constraint-dynamic="2.10.0" callerrev="6.2.0"/>
+				<caller organisation="com.twitter" name="util-collection_2.10" conf="compile, runtime" rev="2.10.0" rev-constraint-default="2.10.0" rev-constraint-dynamic="2.10.0" callerrev="6.2.0"/>
+				<caller organisation="com.twitter" name="util-jvm_2.10" conf="compile, runtime" rev="2.10.0" rev-constraint-default="2.10.0" rev-constraint-dynamic="2.10.0" callerrev="6.2.0"/>
+				<caller organisation="com.twitter" name="util-core_2.10" conf="compile, runtime" rev="2.10.0" rev-constraint-default="2.10.0" rev-constraint-dynamic="2.10.0" callerrev="6.2.0"/>
+				<caller organisation="com.twitter" name="util-hashing_2.10" conf="compile, runtime" rev="2.10.0" rev-constraint-default="2.10.0" rev-constraint-dynamic="2.10.0" callerrev="6.2.0"/>
+				<caller organisation="com.twitter" name="util-app_2.10" conf="compile, runtime" rev="2.10.0" rev-constraint-default="2.10.0" rev-constraint-dynamic="2.10.0" callerrev="6.2.0"/>
+				<caller organisation="com.twitter" name="finagle-core_2.10" conf="compile, runtime" rev="2.10.0" rev-constraint-default="2.10.0" rev-constraint-dynamic="2.10.0" callerrev="6.2.0"/>
+				<artifacts>
+					<artifact name="scala-library" type="jar" ext="jar" status="no" details="" size="7126003" time="0" location="/Users/Bargelli/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.10.3.jar">
+						<origin-location is-local="false" location="UNKNOWN"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="2.10.0" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="-1">
+				<evicted-by rev="2.10.3"/>
+				<caller organisation="com.twitter" name="util-logging_2.10" conf="compile, runtime" rev="2.10.0" rev-constraint-default="2.10.0" rev-constraint-dynamic="2.10.0" callerrev="6.2.0"/>
+				<caller organisation="com.twitter" name="finagle-http_2.10" conf="default, compile, runtime, master" rev="2.10.0" rev-constraint-default="2.10.0" rev-constraint-dynamic="2.10.0" callerrev="6.2.0"/>
+				<caller organisation="com.twitter" name="util-codec_2.10" conf="compile, runtime" rev="2.10.0" rev-constraint-default="2.10.0" rev-constraint-dynamic="2.10.0" callerrev="6.2.0"/>
+				<caller organisation="com.twitter" name="util-collection_2.10" conf="compile, runtime" rev="2.10.0" rev-constraint-default="2.10.0" rev-constraint-dynamic="2.10.0" callerrev="6.2.0"/>
+				<caller organisation="com.twitter" name="util-jvm_2.10" conf="compile, runtime" rev="2.10.0" rev-constraint-default="2.10.0" rev-constraint-dynamic="2.10.0" callerrev="6.2.0"/>
+				<caller organisation="com.twitter" name="util-core_2.10" conf="compile, runtime" rev="2.10.0" rev-constraint-default="2.10.0" rev-constraint-dynamic="2.10.0" callerrev="6.2.0"/>
+				<caller organisation="com.twitter" name="util-hashing_2.10" conf="compile, runtime" rev="2.10.0" rev-constraint-default="2.10.0" rev-constraint-dynamic="2.10.0" callerrev="6.2.0"/>
+				<caller organisation="com.twitter" name="util-app_2.10" conf="compile, runtime" rev="2.10.0" rev-constraint-default="2.10.0" rev-constraint-dynamic="2.10.0" callerrev="6.2.0"/>
+				<caller organisation="com.twitter" name="finagle-core_2.10" conf="compile, runtime" rev="2.10.0" rev-constraint-default="2.10.0" rev-constraint-dynamic="2.10.0" callerrev="6.2.0"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+	</dependencies>
+</ivy-report>

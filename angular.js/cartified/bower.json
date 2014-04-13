@@ -1,0 +1,21 @@
+{
+  "name": "cartified",
+  "version": "0.0.0",
+  "authors": [
+    "Gianluca Bargelli <g.bargelli@gmail.com>"
+  ],
+  "description": "A simple cart implementation",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.2.13",
+    "bootstrap-css": "~3.1.1"
+  }
+}

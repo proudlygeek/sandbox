@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Cartified</title>
+	<link rel="stylesheet" href="libs/bootstrap-css/css/bootstrap.min.css">
+</head>
+<body>
+	<div ng-app="services.cart">
+		<div ng-controller="MyCtrl" class="container-fluid">
+			<div class="col-md-8">
+			</div>
+			<table class="col-md-4 table table-striped">
+				<th> Quantity </th>
+				<th> Item Description </th>
+				<tr ng-repeat="for item in i">
+					<td>
+						<div class="btn-group">
+							<button ng-click="addItem()" type="button" class="btn-xs btn btn-default">+</button>
+							<button ng-click="removeItem()" type="button" class="btn btn-default btn-xs">-</button>
+						</div>
+						{{ item.qnt }} 
+					</td>
+					<td>{{ item.name }}</td>
+				</tr>
+				</table>
+			</ul>
+		</div>
+	</div>
+	<script src="libs/angular/angular.min.js"></script>
+	<script src="app/app.js"></script>
+</body>
+</html>
