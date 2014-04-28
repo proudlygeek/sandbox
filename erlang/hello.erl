@@ -1,4 +1,2 @@
-One = 1.
-Two = 2.
-
-One + Two.
+-module(hello).
+-use(useless).
