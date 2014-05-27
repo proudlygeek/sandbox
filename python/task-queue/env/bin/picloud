@@ -1,0 +1,10 @@
+#!/Users/proudlygeek/Code/sandbox/python/task-queue/env/bin/python2.7
+# EASY-INSTALL-ENTRY-SCRIPT: 'cloud==2.8.5','console_scripts','picloud'
+__requires__ = 'cloud==2.8.5'
+import sys
+from pkg_resources import load_entry_point
+
+if __name__ == '__main__':
+    sys.exit(
+        load_entry_point('cloud==2.8.5', 'console_scripts', 'picloud')()
+    )
